@@ -37,81 +37,77 @@ class WeatherApp extends StatelessWidget {
 }
 
 MaterialColor getThemeColor(String? condition) {
-  if (condition == null) {
-    return Colors.blue;
-  }
-
   switch (condition) {
-    case "sunny":
-    case "clear":
+    case "Sunny":
+    case "Clear":
       return Colors.orange;
 
-    case "partly cloudy":
+    case "Partly cloudy":
       return Colors.lightBlue;
 
-    case "cloudy":
-    case "overcast":
-    case "fog":
-    case "freezing fog":
+    case "Cloudy":
+    case "Overcast":
+    case "Fog":
+    case "Freezing fog":
       return Colors.blueGrey;
 
-    case "mist":
+    case "Mist":
       return Colors.indigo;
 
-    case "patchy rain possible":
-    case "patchy light rain":
-    case "light rain":
-    case "moderate rain at times":
-    case "moderate rain":
-    case "heavy rain at times":
-    case "heavy rain":
-    case "light rain shower":
-    case "moderate or heavy rain shower":
-    case "torrential rain shower":
+    case "Patchy rain possible":
+    case "Patchy light rain":
+    case "Light rain":
+    case "Moderate rain at times":
+    case "Moderate rain":
+    case "Heavy rain at times":
+    case "Heavy rain":
+    case "Light rain shower":
+    case "Moderate or heavy rain shower":
+    case "Torrential rain shower":
       return Colors.blue;
 
-    case "patchy snow possible":
-    case "light snow":
-    case "patchy moderate snow":
-    case "moderate snow":
-    case "patchy heavy snow":
-    case "heavy snow":
-    case "light snow showers":
-    case "moderate or heavy snow showers":
-    case "patchy light snow":
+    case "Patchy snow possible":
+    case "Light snow":
+    case "Patchy moderate snow":
+    case "Moderate snow":
+    case "Patchy heavy snow":
+    case "Heavy snow":
+    case "Light snow showers":
+    case "Moderate or heavy snow showers":
+    case "Patchy light snow":
       return Colors.lightBlue;
 
-    case "patchy sleet possible":
-    case "light sleet":
-    case "moderate or heavy sleet":
-    case "light sleet showers":
-    case "moderate or heavy sleet showers":
+    case "Patchy sleet possible":
+    case "Light sleet":
+    case "Moderate or heavy sleet":
+    case "Light sleet showers":
+    case "Moderate or heavy sleet showers":
       return Colors.cyan;
 
-    case "patchy freezing drizzle possible":
-    case "freezing drizzle":
-    case "heavy freezing drizzle":
-    case "light freezing rain":
-    case "moderate or heavy freezing rain":
+    case "Patchy freezing drizzle possible":
+    case "Freezing drizzle":
+    case "Heavy freezing drizzle":
+    case "Light freezing rain":
+    case "Moderate or heavy freezing rain":
       return Colors.cyan;
 
-    case "thundery outbreaks possible":
-    case "patchy light rain with thunder":
-    case "moderate or heavy rain with thunder":
-    case "patchy light snow with thunder":
-    case "moderate or heavy snow with thunder":
+    case "Thundery outbreaks possible":
+    case "Patchy light rain with thunder":
+    case "Moderate or heavy rain with thunder":
+    case "Patchy light snow with thunder":
+    case "Moderate or heavy snow with thunder":
       return Colors.deepPurple;
 
-    case "blowing snow":
-    case "blizzard":
+    case "Blowing snow":
+    case "Blizzard":
       return Colors.blueGrey;
 
-    case "ice pellets":
-    case "light showers of ice pellets":
-    case "moderate or heavy showers of ice pellets":
+    case "Ice pellets":
+    case "Light showers of ice pellets":
+    case "Moderate or heavy showers of ice pellets":
       return Colors.blueGrey;
 
     default:
-      return Colors.blue;
+      return Colors.blue; // Default color for unknown conditions
   }
 }
